@@ -1,0 +1,26 @@
+<!-- {% extends 'members/base.html' %}
+{% block contect %}
+{% load staticfiles %} -->
+
+<div class='container-fluid'>
+	<div class="row">
+		<div class="col-md-12">
+			<h1> Login Page</h1>
+			<p> You are not logged in.</p>
+
+			<form action='login_user' method='post'> {% csrf_token %}
+				<p>User name:</p>
+				<input name="user_name">
+				<p>Password:</p>
+				<input type='password' name='password'>
+				<br><br/>
+				<input type="submit" value="Log in ">
+			</form>
+
+			<a href="{% url 'members:signup' %}"<button class="form_btn">Register a new user</button></a>
+		</div>
+	</div>
+</div>
+
+<!-- 	{% endblock %}
+ -->
