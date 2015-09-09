@@ -20,76 +20,63 @@
       			<div class="col-md-12">
 				<div class="logo">
 				<a rel="home" href="http://www.abriendomentes.org/" class="site_logo">
-				<img src="/static/images/logomap.jpg" width="178" height="133" alt="Abriendo Mentes">
+				<img src="/static/images/MIL.png" width="178" height="133" alt="Military Spouse Coders">
 			</a>
 		</div>
 			
 		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar">	
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
 
-</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      		<div style="padding-top:12px">
-		      		<a href="http://www.facebook.com/abriendomentes" target="_blank">
-					<img src="http://www.abriendomentes.org/wp-content/themes/elegance/images/sociables/green_circles/facebook.png" alt="Facebook"></a><a href="http://twitter.com/abriendomentes" target="_blank">
-					<img src="http://www.abriendomentes.org/wp-content/themes/elegance/images/sociables/green_circles/twitter.png" alt="Twitter"></a><a href="http://instagram.com/abriendomentes" target="_blank">
-					<img src="http://www.abriendomentes.org/wp-content/uploads/2014/01/am-instagram2.png" alt="Instagram"></a>
-					<a href="http://www.linkedin.com/company/abriendo-mentes" target="_blank"><img src="http://www.abriendomentes.org/wp-content/themes/elegance/images/sociables/green_circles/linkedin.png" alt="LinkedIn"></a>
-					<a href="http://www.abriendomentes.org/contact" target="_blank">
-					<img src="http://www.abriendomentes.org/wp-content/themes/elegance/images/sociables/green_circles/email.png" alt="">
-					</a>
-				</div>
-
-		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-
-		      <ul class="nav navbar-nav">
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		          	<li><a href="/store/">All</a></li>
-		          	<li><a href='/store/?filter=low'>Items under $100</a></li>
-    				<li><a href='/store/?filter=medium'>Items from $100 to $10,000</a></li>
-    				<li><a href='/store/?filter=high' id='baller'><strong>BALLER STATUS</strong></a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		      	<li><a href="/contact">Contact Us</a></li>
-		        <li><a href="/store/cart/">Your Cart</a></li>
-		        {% if user.is_staff %}
-	          	<li><a href="/admin/">Admin</a></li>
-	          	<li><a href="/store/admin/">Order History</a></li>
-          	{% endif %}
-		        {% if user.is_authenticated %}
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="/users/my_account">Profile</a></li>
-		            <!-- <li><a href="/users/">Order History</a></li> -->
-		            <li role="separator" class="divider"></li>
-		            <li><a href="/users/logout/">Logout</a></li>
-		          </ul>
-		        </li>
-		        {% else %}
-		        	<li><a href="/users/login/">Log in</a></li>
-		        {% endif %}
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 	    <div id="content">
 	        {% block content %}
 	        {% endblock %}
