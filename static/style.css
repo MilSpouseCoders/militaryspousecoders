@@ -1,0 +1,145 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+h1 {
+    font-family: 'Josefin Slab', serif;
+
+}
+
+body {
+    line-height: 1.75;
+    color: #EC1A5B;
+    font-family: 'Josefin Sans', sans-serif;}
+ol, ul {
+    list-style: none;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #EE4723;
+    font-family: 'Josefin Slab';
+    font-size: 20px;
+   
+}
+a:hover {
+    color:#f0f0f0;
+}
+a: visited {
+  color:#EC1A5B;
+}
+
+/**************************
+* LOGO
+***************************/
+
+.logo {
+  margin: 1rem 0px;
+
+}
+
+/**************************
+* NAV
+***************************/
+.navbar-brand{
+  font-family: 'Josefin Slab', serif;
+  font-size: 25px;
+}
+
+.nav navbar-nav navbar-right {
+  font-family: 'Josefin Slab', serif;
+}
+
+
+.navbar-default {
+  border-color: #EE4723;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color:#F26925;
+
+
+/***********************
+ * SIGNUP FORM
+ ***********************/
+
+form {
+  max-width: 100px;
+  margin: 5px auto;
+  padding: 10px 2px 20px;
+  background: #ADE5EF;
+  border-radius: 8px;
+  font-family: 'Megrim', cursive;
+
+}
+
+input[type=submit] {
+  font-weight: bold;
+}
+
+select, textarea {
+  font-family: 'Satisfy', cursive;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+form {
+    max-width: 325px;
+  }
+  .form_textbox{
+    font-family: 'Satisfy';
+    font-size: 22px;
+    text-decoration: none;
+    color: #188989;
+    font-weight: bold;
+  }
+
+
+submit{
+  width: 20px;
+  height: 20px;
+  display: block;
+  font-family: 'Satisfy';
+
+/*  margin: 0 auto -15px auto;*/
+/*  margin-bottom: 2.75rem;
+*/  background: #fff;
+  border-radius: 80%;
+  border: 1px solid #FF7052;
+  color: #FF7052;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 7px #fff;
+  transition: 0.2s ease-out;
+  
+  &:hover, &:focus{
+    background: #FF7052;
+    color: #fff;
+    outline: 0;
+  }
+  .form_btn {
+  max-width: 100px;
+  margin: 10px auto;
+  padding: 2px 2px;
+  background: #ADE5EF;
+  border-radius: 8px;
+  font-family: 'Satisfy';
+  }
+
+  .select_form{
+    font-family: 'Megrim', cursive;
+  }
+
+
+
